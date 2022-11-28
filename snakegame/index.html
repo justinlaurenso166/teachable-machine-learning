@@ -4,7 +4,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="https://unpkg.com/ml5@0.4.1/dist/ml5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -21,6 +21,9 @@
     </div>
     <div class="flex justify-center">
         <h1 class="font-bold text-2xl items-center">HighScore : <span id="high_score"></span></h1>
+    </div>
+    <div class="flex justify-center mt-6 hidden" id="restart">
+        <button onclick="window.location.reload()" class="bg-red-600 text-white px-5  py-1 rounded-lg transition transform hover:scale-105 hover:bg-red-700 hover:shadow-lg font-medium tracking-wide">Restart</button>
     </div>
     <div class="fixed top-0 left-0 ml-10 mt-10" id="menu">
         <a href="../index.html">

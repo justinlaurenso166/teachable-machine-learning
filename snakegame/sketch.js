@@ -103,7 +103,7 @@ function draw() {
         if (score > high_score) {
             localStorage.setItem("HighScore", score);
         }
-        // document.getElementById('restart').classList.remove('hidden')
+        document.getElementById('restart').classList.remove('hidden')
     }
 
     noStroke();
